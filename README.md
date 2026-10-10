@@ -45,7 +45,7 @@ class blinkit(models.Model):
  alternative_phoneno=models.IntegerField()
 
 class blinkitadmin(admin.ModelAdmin):
- list_details=["name","Email","cart","phone_no","order_history","total_amtspent","alternative_phoneno"]
+ list_display=["name","Email","cart","phone_no","order_history","total_amtspent","alternative_phoneno"]
  
 admin.py
 from django.contrib import admin
